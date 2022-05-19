@@ -16,19 +16,16 @@ public class JavaFXMLApplication extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        //======================================================================
-        // 1- creación del grafo de escena a partir del fichero FXML
-        FXMLLoader loader= new  FXMLLoader(getClass().getResource("FXML.fxml"));
+     
+        FXMLLoader loader= new  FXMLLoader(getClass().getResource("/view/FXMLSignIn.fxml"));
         Parent root = loader.load();
-        //======================================================================
-        // 2- creación de la escena con el nodo raiz del grafo de escena
+        
         Scene scene = new Scene(root);
-        //======================================================================
-        // 3- asiganación de la escena al Stage que recibe el metodo 
-        //     - configuracion del stage
-        //     - se muestra el stage de manera no modal mediante el metodo show()
+        scene.getStylesheets().add("/view/style.css");
+ 
         stage.setScene(scene);
-        stage.setTitle("IPC");
+        stage.setTitle("LOGIN");
+        stage.setResizable(false); //para que no se pueda redimensionar
         stage.show();
     }
 
