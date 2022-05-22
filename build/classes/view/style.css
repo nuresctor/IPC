@@ -1,0 +1,117 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 abr. 2021, 13:56:22
+    Author     : HongWei
+*/
+.root {
+/*    dBlue: #1062A1;
+    lBlue: #85c3f2;
+    nBlue: #45A4ED;
+    
+    eBlack: #1E1E20;
+    eSilver: #77797E;
+    eBeige: #D9DFCD;
+    
+    eGreen: #8EF507;*/
+    
+    -fx-base: #3f474f;
+    -fx-accent: #e7eff7 ;
+    -fx-default-button: #7f878f ;
+    -fx-focus-color: #efefef;
+    -fx-faint-focus-color: #efefef22;
+    -fx-focused-text-base-color : ladder(
+            -fx-selection-bar,
+            -fx-light-text-color 45%,
+            -fx-dark-text-color 46%,
+            -fx-dark-text-color 59%,
+            -fx-mid-text-color 60%
+        );
+    -fx-focused-mark-color : -fx-focused-text-base-color ;   
+}
+
+/*
+BorderPane, AnchorPane {
+    -fx-background-color: lBlue;
+    -fx-background-image: url(https://i.pinimg.com/474x/fe/61/89/fe6189f27ec5f05d14fee32bada807d7.jpg);
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+}
+
+Text {
+    -fx-font-family: "dubai bold";
+    -fx-fill: eBlack;
+}
+
+Text.menu {
+    -fx-fill: eBeige;
+}
+
+#TError {
+    -fx-fill: red;
+}
+
+TextField {
+    -fx-background-color: -fx-text-box-border, -fx-background;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 0;
+}
+
+TextField:focused {
+    -fx-background-color: eBeige;
+}
+
+PasswordField {
+    -fx-background-color: -fx-text-box-border, -fx-background;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-background-radius: 0;
+}
+
+PasswordField:focused {
+    -fx-background-color: eBeige;
+}
+
+.menu {
+    -fx-background-color: dBlue;
+    -fx-background-radius: 12px;
+}
+
+Hyperlink {
+    -fx-text-fill: eBeige;
+}
+*/
+#title {
+    /*-fx-font-size: 48px;*/
+}
+/*
+Button {
+    -fx-background-color: eBeige;
+    -fx-font-family: "dubai bold";
+    -fx-background-radius: 8px;
+    -fx-text-fill: eBlack;
+}
+
+Button.big {
+    -fx-font-size: 32px;
+}
+
+.game {
+    -fx-background-color: eBeige;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: #0093ff;
+    -fx-text-fill: white;
+}
+
+.list-cell:even {
+    -fx-background-color: eBeige;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #0093ff;
+    -fx-text-fill: white;
+}*/
