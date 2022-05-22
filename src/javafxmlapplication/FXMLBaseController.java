@@ -5,11 +5,13 @@
  */
 package view;
 
+import credentials.ApplicationState;
 import DBAccess.NavegacionDAOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
 import model.Navegacion;
+import model.Session;
 
 /**
  *
@@ -18,6 +20,7 @@ import model.Navegacion;
 public abstract class FXMLBaseController implements Initializable {
     
     protected Navegacion db;
+    protected Session sesion;
     protected ApplicationState applicationState;
     
     @Override
@@ -28,7 +31,9 @@ public abstract class FXMLBaseController implements Initializable {
     
     private void initDB() {
         try {
+            
             db = Navegacion.getSingletonNavegacion();
+            
         } catch (NavegacionDAOException err) {
             System.out.println(err);
         }

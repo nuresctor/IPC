@@ -77,13 +77,13 @@ public class FXMLSignUpController extends FXMLBaseController {
     }
     
     private User insertUser(String nickName, String email, String password, LocalDate birthday){
-        if(getEmail(email)){
+        if(getEmail(email) && getNickName(nickName) && getPassword(password)){
             if(!db.exitsNickName(nickName)){
                 User u = null;
                 try {
                     u = db.registerUser(nickName, email, password,  birthday);
                 } catch (NavegacionDAOException ex) {
-                    
+                    System.out.println("Something went wrong.");
                 }
                 return u;
             }
@@ -103,13 +103,28 @@ public class FXMLSignUpController extends FXMLBaseController {
             return false;
         }
     }
+    
+    private boolean getNickName(String nickName){
+        if (User.checkNickName(nickName)){
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    private boolean getPassword(String password){
+        if (User.checkPassword(password)){
+            return true;
+        } else {
+            return false;
+        }
+    }
+            
 
     @Override
     void init() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
-    
     
     
 }

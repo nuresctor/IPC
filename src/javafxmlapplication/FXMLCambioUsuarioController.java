@@ -76,6 +76,7 @@ public class FXMLCambioUsuarioController extends FXMLBaseController {
         initUserInfo();
     }
     
+    @FXML
     private void NavigateToHome(){
         Navigation.navigateToHome((Stage) BotonCancelar.getScene().getWindow(), getClass());
     }

@@ -22,7 +22,7 @@
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </padding>
          <children>
-            <Button fx:id="BotonCancelar" alignment="TOP_RIGHT" mnemonicParsing="false" text="Cancelar" />
+            <Button fx:id="BotonCancelar" alignment="TOP_RIGHT" mnemonicParsing="false" onAction="#NavigateToHome" text="Cancelar" />
          </children>
       </HBox>
    </top>
